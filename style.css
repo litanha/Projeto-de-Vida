@@ -65,13 +65,13 @@ body {
     border-bottom: 4px solid var(--verde);
  }  
 
- .abas-textos{
+.abas-textos {
         background-color: var(--texto-fundo);
         padding: 40px;
         border-radius: 0 0 40px 40px;
       }
       
-.aba-conteudo-ativo{
+.aba-conteudo.ativo {
     display: block;
 }
 
