@@ -1,207 +1,116 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <title>Meu Portifólio</title>
-   <link rel="stylesheet" href="style.css">
+    <title>Meus objetivos do ano</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header class="container text-center">
-    <img src="img/avatar-perfil.png" class="rounded-circle"
-    width="150" height="150" alt="avatar da fernanda" srcset="">
-    <p class="lead">Eu sou Fernanda</p>
-    <h1>Eu ensino programação</h1>
-    <p>Engenheira de Computação e Pedagoga.
-        Ensino pensamento computacional para estudantes 
-        do Ensino Fundamental e Médio.
-        Ensino sobre pensamento computacional usando 
-        HTML, CSS e JavaScript.
-        Veja os projetos que já desenvolvi!
-    </p>
-    <p>Minhas habilidades</p>
-    <div> 
-        <p  class="badge text-bg-secondary">HTML</p>
-        <p  class="badge text-bg-secondary">CSS</p>
-        <p  class="badge text-bg-secondary">JavaScript</p>
-        <p  class="badge text-bg-secondary">Scratch</p>
-    </div>
-</header>
-<main class="container mt-5">
-    <h2>Meus Projetos</h2>
-    <div class="row">
-        <!--Projeto 1-->
-        <div class="col-md-4">
-            <div class="card">
-                <img src="img/projeto-1.png" class="card-img-top" alt="Imagem do projeto da biblioteca">
-                <div class="card-body">
-                  <h5 class="card-title">Minha biblioteca: uma webpage personalizada</h5>
-                  <p class="card-text">Este projeto é uma página web que apresenta uma lista dos meus livros dos meus livros 
-                    favoritos, incluindo informações sobre os autores, datas de publicação e links para
-                    compra na Amazon. A página é estilizada com CSS pera uma visualização agrádavel e 
-                    usa fontes externas do Google Fonts.</p>
-                  <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">Veja o Projeto</button>
-                </div>
-              </div>
-         </div> 
-         <!--Projeto 2-->
-         <div class="col-md-4">
-            <div class="card">
-                <img src="img/projeto-2.png" class="card-img-top" alt="Imagem do projeto da biblioteca">
-                <div class="card-body">
-                  <h5 class="card-title">Decidindo o futuro: Uma jornada interativa sobre
-                    a Inteligência Artficial</h5>
-                  <p class="card-text">Este projeto é um jogo interativo baseado em navegador 
-                    que explora o impacto e as implicações da Inteliência Artificial (IA) na
-                     sociedade, permitindo que as pessoas jogadoras façam escolhas que influenciam 
-                     o desenrolar de uma narrativa sobre o futuro do IA.
-                    </p>
-                  <button type="button" class="btn btn-link"data-bs-toggle="modal" data-bs-target="#modal2">Veja o Projeto</button>
-                </div>
-              </div>
+    <section class="conteudo-principal">
+        <h2 class="titulo-principal">Meus objetivos do ano<span>_</span></h2>
+        <div class="conteudo">
+        <div class="botoes">
+            <button class="botao ativo">Cursos na Alura</button>
+            <button class="botao">Criar projetos em Javascript</button>
+            <button class="botao">Criar um portfolio</button>
+            <button class="botao">Atualizar meu currículo</button>
         </div>
-        <!--Projeto 3-->
-        <div class="col-md-4">
-           <div class="card">
-               <img src="img/projeto-3.png" class="card-img-top" alt="Imagem do projeto da biblioteca">
-               <div class="card-body">
-                 <h5 class="card-title">Explorando o Universo: Uma Aventura Interativa em
-                   Astronomia com Scratch</h5>
-                 <p class="card-text">Este projeto Scratch cria uma experiência interativa eucativa sobre astronomia,
-                   permitndo aos usuarios explorar as informações sobre contelações, eclipses
-                   e a forma da Terra através de cenários dinâmicos e diálogos informativos .</p>
-                 <button type="button" class="btn btn-link"data-bs-toggle="modal" data-bs-target="#modal3">Veja o Projeto</button>
-               </div>
-             </div>
-       </div>
+        <div class="abas-textos">
+            <div class="aba-conteudo ativo">
+                <h3 class="aba-conteudo-titulo-principal">Estudar 4 cursos na alura</h3>
+                <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
+                <div class="contador">
+                    <div class="contador-digito">
+                        <p class="contador-digito-numero" id="dias0"></p>
+                        <p class="contador-digito-texto">dias</p>
+                    </div>
+                    <div class="contador-digito">
+                        <p class="contador-digito-numero" id="horas0"></p>
+                        <p class="contador-digito-texto">horas</p>
+                    </div>
+                    <div class="contador-digito">
+                        <p class="contador-digito-numero" id="min0"></p>
+                        <p class="contador-digito-texto">min</p>
+                    </div>
+                    <div class="contador-digito">
+                        <p class="contador-digito-numero" id="seg0"></p>
+                        <p class="contador-digito-texto">seg</p>
+                    </div>
+                </div>
+            </div>
+            <div class="aba-conteudo">
+                <h3 class="aba-conteudo-titulo-principal">Criar 5 projetos em Javascript</h3>
+                <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
+                <div class="contador">
+                    <div class="contador-digito">
+                        <p class="contador-digito-numero" id="dias1"></p>
+                        <p class="contador-digito-texto">dias</p>
+                    </div>
+                    <div class="contador-digito">
+                        <p class="contador-digito-numero" id="horas1"></p>
+                        <p class="contador-digito-texto">horas</p>
+                    </div>
+                    <div class="contador-digito">
+                        <p class="contador-digito-numero" id="min1"></p>
+                        <p class="contador-digito-texto">min</p>
+                    </div>
+                    <div class="contador-digito">
+                        <p class="contador-digito-numero" id="seg1"></p>
+                        <p class="contador-digito-texto">seg</p>
+                    </div>
+                </div>
+            </div>
+            <div class="aba-conteudo">
+                <h3 class="aba-conteudo-titulo-principal">Criar um portfolio com os meus 3 melhores projetos</h3>
+                <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
+                <div class="contador">
+                    <div class="contador-digito">
+                        <p class="contador-digito-numero" id="dias2"></p>
+                        <p class="contador-digito-texto">dias</p>
+                    </div>
+                    <div class="contador-digito">
+                        <p class="contador-digito-numero" id="horas2"></p>
+                        <p class="contador-digito-texto">horas</p>
+                    </div>
+                    <div class="contador-digito">
+                        <p class="contador-digito-numero" id="min2"></p>
+                        <p class="contador-digito-texto">min</p>
+                    </div>
+                    <div class="contador-digito">
+                        <p class="contador-digito-numero" id="seg2"></p>
+                        <p class="contador-digito-texto">seg</p>
+                    </div>
+                </div>
+            </div>
+            <div class="aba-conteudo">
+                <h3 class="aba-conteudo-titulo-principal">Atualizar meu curriculo com os certificados da Alura</h3>
+                <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
+                <div class="contador">
+                    <div class="contador-digito">
+                        <p class="contador-digito-numero" id="dias3"></p>
+                        <p class="contador-digito-texto">dias</p>
+                    </div>
+                    <div class="contador-digito">
+                        <p class="contador-digito-numero" id="horas3"></p>
+                        <p class="contador-digito-texto">horas</p>
+                    </div>
+                    <div class="contador-digito">
+                        <p class="contador-digito-numero" id="min3"></p>
+                        <p class="contador-digito-texto">min</p>
+                    </div>
+                    <div class="contador-digito">
+                        <p class="contador-digito-numero" id="seg3"></p>
+                        <p class="contador-digito-texto">seg</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</main>
-<!--Modal Projeto 1-->
-<div class="modal" id="modal1" tabindex="-1">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Minha biblioteca: Uma Webpage personalizada</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <p>O projeto é uma página web criada com HTML e CSS, destinada a exibir uma coleção pessoal de
-          livros favoritos. O objetivo é criar um ambiente virtual onde seja possível compartilhar
-          seus livros preferidos, fornecendo uma descrição breve de cada um, incluindo o autor, o ano
-          de publicação e uma opção de compra.</p>
-      <p>A estrutura do site é baseada em HTML, que define a semântica e o layout do conteúdo,
-          enquanto o CSS é usado para estilizar a página visualmente, incluindo cores, tipografia e a
-          disposição dos elementos.</p>
-      <p>O HTML organiza o conteúdo em um cabeçalho com o título do site, seguido por uma divisão
-          principal (.container) que apresenta o propósito do site e a coleção de livros em uma seção
-          flexível (.livros). Cada livro é destacado em seu próprio contêiner (.livro), mostrando uma
-          imagem da capa, detalhes do livro e um link de compra. O design responsivo é garantido pelo
-          uso de uma meta tag viewport e um layout flexível que se adapta a diferentes tamanhos de
-          tela.</p>
-      <p>O CSS personaliza o visual do site, usando variáveis para cores, estilizando o texto com uma
-          fonte importada do Google Fonts e aplicando um esquema de cores suaves e botões interativos.
-          O uso de HTML e CSS é importante pois assim é possível criar um site acessível e
-          esteticamente agradável sem a necessidade de scripts complexos, com foco na usabilidade e na
-          experiência da pessoa usuária. A escolha da tipografia e do esquema de cores contribui para
-          a atmosfera acolhedora do site, incentivando a exploração da coleção de livros.</p>
-          <img src="img/projeto-1.png" class="img-fluid w-100" alt="Imagem representativa do projeto de uma biblioteca online">
-      </div>
-      <div class="modal-footer">
-        <a href="">Ver projeto ao vivo</a>
-        <a href="">Ver código do projeto</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!--Modal Projeto 2-->
-<div class="modal" id="modal2" tabindex="-1">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Minha biblioteca: Uma Webpage personalizada</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <p>O projeto é uma página web criada com HTML e CSS, destinada a exibir uma coleção pessoal de
-          livros favoritos. O objetivo é criar um ambiente virtual onde seja possível compartilhar
-          seus livros preferidos, fornecendo uma descrição breve de cada um, incluindo o autor, o ano
-          de publicação e uma opção de compra.</p>
-      <p>A estrutura do site é baseada em HTML, que define a semântica e o layout do conteúdo,
-          enquanto o CSS é usado para estilizar a página visualmente, incluindo cores, tipografia e a
-          disposição dos elementos.</p>
-      <p>O HTML organiza o conteúdo em um cabeçalho com o título do site, seguido por uma divisão
-          principal (.container) que apresenta o propósito do site e a coleção de livros em uma seção
-          flexível (.livros). Cada livro é destacado em seu próprio contêiner (.livro), mostrando uma
-          imagem da capa, detalhes do livro e um link de compra. O design responsivo é garantido pelo
-          uso de uma meta tag viewport e um layout flexível que se adapta a diferentes tamanhos de
-          tela.</p>
-      <p>O CSS personaliza o visual do site, usando variáveis para cores, estilizando o texto com uma
-          fonte importada do Google Fonts e aplicando um esquema de cores suaves e botões interativos.
-          O uso de HTML e CSS é importante pois assim é possível criar um site acessível e
-          esteticamente agradável sem a necessidade de scripts complexos, com foco na usabilidade e na
-          experiência da pessoa usuária. A escolha da tipografia e do esquema de cores contribui para
-          a atmosfera acolhedora do site, incentivando a exploração da coleção de livros.</p>
-          <img src="img/projeto-2.png" class="img-fluid w-100" alt="Imagem representativa do projeto de uma biblioteca online">
-      </div>
-      <div class="modal-footer">
-        <a href="">Ver projeto ao vivo</a>
-        <a href="">Ver código do projeto</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!--Modal Projeto 3-->
-<div class="modal" id="modal3" tabindex="-1">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Minha biblioteca: Uma Webpage personalizada</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <p>O projeto é uma página web criada com HTML e CSS, destinada a exibir uma coleção pessoal de
-          livros favoritos. O objetivo é criar um ambiente virtual onde seja possível compartilhar
-          seus livros preferidos, fornecendo uma descrição breve de cada um, incluindo o autor, o ano
-          de publicação e uma opção de compra.</p>
-      <p>A estrutura do site é baseada em HTML, que define a semântica e o layout do conteúdo,
-          enquanto o CSS é usado para estilizar a página visualmente, incluindo cores, tipografia e a
-          disposição dos elementos.</p>
-      <p>O HTML organiza o conteúdo em um cabeçalho com o título do site, seguido por uma divisão
-          principal (.container) que apresenta o propósito do site e a coleção de livros em uma seção
-          flexível (.livros). Cada livro é destacado em seu próprio contêiner (.livro), mostrando uma
-          imagem da capa, detalhes do livro e um link de compra. O design responsivo é garantido pelo
-          uso de uma meta tag viewport e um layout flexível que se adapta a diferentes tamanhos de
-          tela.</p>
-      <p>O CSS personaliza o visual do site, usando variáveis para cores, estilizando o texto com uma
-          fonte importada do Google Fonts e aplicando um esquema de cores suaves e botões interativos.
-          O uso de HTML e CSS é importante pois assim é possível criar um site acessível e
-          esteticamente agradável sem a necessidade de scripts complexos, com foco na usabilidade e na
-          experiência da pessoa usuária. A escolha da tipografia e do esquema de cores contribui para
-          a atmosfera acolhedora do site, incentivando a exploração da coleção de livros.</p>
-          <img src="img/projeto-3.png" class="img-fluid w-100" alt="Imagem representativa do projeto de uma biblioteca online">
-      </div>
-      <div class="modal-footer">
-        <a href="">Ver projeto ao vivo</a>
-        <a href="">Ver código do projeto</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<footer class="container py-5">
-<h2>Entre em contato.</h2>
-</div>
-    <i class="bi bi-github"></i>
-    <a href="https://github.com/kalyneev2">Github</a>
-</div>
-
-<p class="my-5 text-center">© Copyright 2024, produzido por Fernanda Maschetti </p>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    </section>
+    <script src="main.js"></script>
 </body>
+
 </html>
